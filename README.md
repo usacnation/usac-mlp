@@ -10,7 +10,7 @@ This message is emitted on detecting driver changes for an Entry ($E).
 |-|-|-|
 |MLP Entry ID|0 - 1024|Entry ID from $E command|
 |Timestamp|0-FFFFFFFF|Time in milliseconds (hex characters)|
-|Driver ID|0-9|Driver ID selection for driver|
+|Driver ID|0-9 (string) |Driver ID selection for driver, provided by Driver ID hardware in use|
 |Driver Name|Michael Schumacher|Name of active driver|
 
 ## $USAC:S - Sectors
