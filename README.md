@@ -2,6 +2,15 @@
 
 Extensions to the MyLaps Mutliloop protocol (MLP) have been added to preserve backward compatibility while supporting concepts not included in the original MLP specification. Notably, time zones, team driving, virtual loops and virtual sectors.
 
+## Naming Conventions
+
+### Loops
+- Fixed: `SF, SFPIT, POUT, PIN, IM1, IM2, VIN or VOUT (when used)`
+- Virtual: `IM(1-99)(a-z) IM1a or IM3c`
+
+### Sectors
+- Sectors: `S1, S2, S3, PIT, VMAX (when used)`
+- Virtual: `S(1-99)(a...z) S1a or S3b`
 
 ## $USAC:DRIVERID - Driver ID
 This message is emitted on detecting driver changes for an Entry ($E).
