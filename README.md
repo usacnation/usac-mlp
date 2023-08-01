@@ -2,6 +2,28 @@
 
 Extensions to the MyLaps Mutliloop protocol (MLP) have been added to preserve backward compatibility while supporting concepts not included in the original MLP specification. Notably, time zones, team driving, virtual loops and virtual sectors.
 
+## Common URLs & Ports (per series)
+
+### Porsche Sprint Challenge
+
+- Multiloop: timing.usacnation.com:20837
+- RMonitor: timing.usacnation.com:20854
+- WS: wss://timing.usacnation.com/ws/psc
+- Timing: [https://timing.usacnation.com/live/?channel=psc](https://timing.usacnation.com/live/?channel=psc)
+- GPS: [https://timing.usacnation.com/gps/?channel=psc](https://timing.usacnation.com/gps/?channel=psc)
+
+Questions? [timing@usacnation.com](timing@usacnation.com)
+
+### SRO America
+
+- Multiloop: timing.usacnation.com:50003
+- RMonitor: timing.usacnation.com:50000
+- WS: wss://timing.usacnation.com/ws/sro
+- Timing: [https://timing.usacnation.com/live/?channel=sro](https://timing.usacnation.com/live/?channel=sro)
+- GPS: [https://timing.usacnation.com/gps/?channel=sro](https://timing.usacnation.com/gps/?channel=sro)
+
+Questions? [srotiming@usacnation.com](srotiming@usacnation.com)
+
 ## Naming Conventions
 
 ### Loops
