@@ -61,3 +61,62 @@ The timezone and current timestamp of the on-site USAC data relay routing messag
 |-|-|-|
 |Timezone|America/Los_Angeles|IANA Timezone|
 |Timestamp|0-FFFFFFFF|Time in milliseconds (hex characters)|
+
+
+## Series Colors
+
+### SRO America
+
+#### GTWCA
+
+Pro = White (FFFFFF)
+
+Pro-Am = Black (000000)
+
+Am = Red (E21F26)
+
+#### GTAM
+
+SRO3 = Red #E21F26
+
+GT2 = Blue #1D3C6F
+
+GT4 = Yellow #F7EC13
+
+#### GT4AM
+
+Silver = Grey #A3A3A3
+
+Pro-Am = Black #000000
+
+Am = Red #E21F26
+
+#### TCAM
+
+TCX = Red #E21F26
+
+TC = Blue #1D3C6F
+
+TCA = Yellow #F7EC13
+
+### Porsche Sprint Challenge
+
+991 NA = #BF0D2B
+
+991 UW = #BF0D2B
+
+992 M NA = #006298
+
+992 M UW = #006298
+
+992 NA = #BCBCBC
+
+992 UW = #BCBCBC
+
+Cay M NA = #FFCD00
+
+Cay NA = #FFFFFF
+
+Cay UW = #FFFFFF
+
+Cay M UW = #FFCD00
