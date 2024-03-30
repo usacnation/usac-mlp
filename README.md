@@ -69,11 +69,11 @@ The timezone and current timestamp of the on-site USAC data relay routing messag
 
 #### GTWCA
 
-Pro = White (FFFFFF)
+Pro = White #FFFFFF
 
-Pro-Am = Black (000000)
+Pro-Am = Black #000000
 
-Am = Red (E21F26)
+Am = Red #E21F26
 
 #### GTAM
 
