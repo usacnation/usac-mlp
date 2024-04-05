@@ -1,6 +1,6 @@
-# USAC Multiloop Messages
+# USAC Websocket/Multiloop Messages
 
-Extensions to the MyLaps Mutliloop protocol (MLP) have been added to preserve backward compatibility while supporting concepts not included in the original MLP specification. Notably, time zones, team driving, virtual loops and virtual sectors.
+Extensions to the MyLaps Mutliloop protocol (MLP) have been added to preserve backward compatibility while supporting concepts not included in the original MLP specification. Notably, time zones, team driving, virtual loops and virtual sectors. The Websocket feed carries multiloop (parsed as JSON) plus additional messages.
 
 ## Common URLs & Ports (per series)
 
@@ -33,6 +33,20 @@ Questions? [srotiming@usacnation.com](srotiming@usacnation.com)
 ### Sectors
 - Sectors: `S1, S2, S3, PIT, VMAX (when used)`
 - Virtual: `S(1-99)(a...z) S1a or S3b`
+
+## Websocket Subscriptions
+Due to the large volume of messages available, you may selectively subscribe to topics other than the defaults. The defaults preserve backwards compatiability but may not suit all use cases. When initially connecting, a "$USAC:SUBSCRIPTIONS" message is sent indicating which messages are subscribed to:
+
+`{"command":"$USAC:SUBSCRIPTIONS","subscriptions":["$USAC:STINT","$USAC:AVGPOS","$USAC:POINTS","$USAC:GPS","$USAC:ENTRY","$USAC:TZ","$USAC:WEATHER","$USAC:L","$USAC:S","$USAC:DRIVERID","$USAC:INTPOS","$T","$A","$H","$C","$S","$L","$I","$F","$N","$E","$R","$V","ping","$USAC:SUBSCRIPTIONS"]}`
+
+You may adjust this subscription list by issuing a "subscriptions" request. A `$USAC:SUBSCRIPTIONS` response will be returned with the new set of subscribed topics.
+
+`{"subscriptions":["$H","$USAC:L"]}`
+
+### Topics available
+`'$USAC:STINTS', '$USAC:CAN', '$USAC:POS', '$USAC:STINT', '$USAC:GPS', '$USAC:ENTRY', '$USAC:TZ', '$USAC:WEATHER', '$USAC:L', '$USAC:S', '$USAC:DRIVERID', '$T', '$A', '$H', '$C', '$S', '$L', '$I', '$F', '$N', '$E', '$R', '$V'`
+
+Note: Some topics are excluded or rate limited from public endpoints. This is established by each series on a per series basis.
 
 ## $USAC:DRIVERID - Driver ID
 This message is emitted on detecting driver changes for an Entry ($E).
