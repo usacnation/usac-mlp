@@ -134,3 +134,9 @@ Cay NA = #FFFFFF
 Cay UW = #FFFFFF
 
 Cay M UW = #FFCD00
+
+### Porsche Endurance Challenge
+
+GT3 = #D5001C
+
+Cay = #FFFFFF
