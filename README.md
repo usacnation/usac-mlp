@@ -83,6 +83,10 @@ The timezone and current timestamp of the on-site USAC data relay routing messag
 
 #### GTWCA
 
+FGTWCA Pro = White #FFFFFF
+
+IGTC Pro = Yellow #E21F26
+
 Pro = White #FFFFFF
 
 Pro-Am = Black #000000
